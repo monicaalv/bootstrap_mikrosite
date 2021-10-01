@@ -1,11 +1,57 @@
-#splash div {
+/* change these */
+
+/* @import url("https://fonts.googleapis.com/css?family=Open+Sans:400italic,800italic,400,800"); */
+/* @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap'); */
+/* @import url("https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic"); */
+
+* {
+  box-sizing: border-box;
+}
+
+/* THIS IS ALL meant for editing. You might want to do it differently,
+name the variables differently,
+use the fonts in other ways in the font hierarchy etc. */
+
+/* change / delete some of these - note: all variables are listed twice */
+
+:root {
+  --bg-color: #be0f0f;
+  --link-color: rgb(128, 0, 6);
+  --link-hover-color: #f7d138;
+  --color-2: #f7d138;
+  --color-3: #f77118;
+  --color-4: #f05fe6;
+  --color-5: black;
+  --font-h1: "anton", rergular;
+  --primary-font: "Anton", regular;
+  --secondary-font: "corbel", regular;
+  --main-text-font: "spartan", light;
+  --main-text-color: #000;
+  --font-h4: "spartan", light;
+  --h3-color: #000;
+
+  --white-space: 1rem;
+
+  /*  --white-space: 2rem; */
+}
+
+/* html {
+  font-size: 100%;
+  font-family: var(--primary-font);
+} */
+
+#splash div,
+#section2 div {
   place-items: center;
 }
 
-#splash div * {
+#splash div *,
+#section2 div * {
   grid-area: 1 / 1 / -1 / -1;
 }
 
-h1 {
-  color: yellow;
+.splashh1 {
+  color: var(--color-2);
+  font-family: var(--font-h1);
+  font-size: 12rem;
 }

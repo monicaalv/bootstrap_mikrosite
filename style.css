@@ -1,0 +1,11 @@
+#splash div {
+  place-items: center;
+}
+
+#splash div * {
+  grid-area: 1 / 1 / -1 / -1;
+}
+
+h1 {
+  color: yellow;
+}

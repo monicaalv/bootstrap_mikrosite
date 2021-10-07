@@ -14,7 +14,8 @@ use the fonts in other ways in the font hierarchy etc. */
 
 /* change / delete some of these - note: all variables are listed twice */
 
-:root {
+/* :root */
+html {
   --bg-color: #be0f0f;
   --link-color: rgb(128, 0, 6);
   --link-hover-color: #f7d138;
@@ -29,16 +30,31 @@ use the fonts in other ways in the font hierarchy etc. */
   --main-text-color: #000;
   --font-h4: "spartan", light;
   --h3-color: #000;
-
-  --white-space: 1rem;
-
-  /*  --white-space: 2rem; */
+  --h3: 1rem;
+  --white-space: 2rem;
 }
 
 /* html {
   font-size: 100%;
   font-family: var(--primary-font);
 } */
+
+nav img {
+  width: 10%;
+}
+.h2 h2 {
+  font-family: "spartan";
+  font-size: calc(1.5rem + 0.9vw);
+  font-weight: normal;
+}
+.text h3 {
+  font-family: "corbel";
+  font-weight: normal;
+  font-size: 1rem;
+}
+#splash {
+  margin-bottom: var(--white-space);
+}
 
 #splash div,
 #section2 div {
@@ -50,8 +66,51 @@ use the fonts in other ways in the font hierarchy etc. */
   grid-area: 1 / 1 / -1 / -1;
 }
 
+.text,
+#section2 {
+  margin-bottom: var(--white-space);
+}
+
 .splashh1 {
   color: var(--color-2);
   font-family: var(--font-h1);
-  font-size: 12rem;
+  font-size: 5rem;
+}
+footer h6 {
+  font-family: "spartan";
+}
+footer p {
+  font-family: "corbel";
+  font-weight: normal;
+  font-size: 1rem;
+}
+
+/* //--Ipad---// */
+@media (min-width: 700px) {
+  #splash div * {
+    font-size: 10rem;
+  }
+
+  footer .col-md-3 {
+    width: 60%;
+  }
+
+  .cr p {
+    text-align: center;
+  }
+
+  .ipad .img-fluid {
+    margin-top: 1.5rem;
+  }
+}
+
+/* //--desctop--// */
+@media (min-width: 992px) {
+  #splash div * {
+    font-size: 15rem;
+  }
+
+  .ipad .img-fluid {
+    margin-top: 0;
+  }
 }

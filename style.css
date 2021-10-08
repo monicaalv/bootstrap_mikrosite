@@ -38,9 +38,15 @@ html {
   font-size: 100%;
   font-family: var(--primary-font);
 } */
+body {
+  background-color: var(--bg-color);
+}
 
 nav img {
   width: 10%;
+}
+nav button {
+  margin-right: 1.5rem;
 }
 .h2 h2 {
   font-family: "spartan";
@@ -91,7 +97,7 @@ footer p {
     font-size: 10rem;
   }
 
-  footer .col-md-3 {
+  footer .col-md-4 {
     width: 60%;
   }
 
@@ -112,5 +118,10 @@ footer p {
 
   .ipad .img-fluid {
     margin-top: 0;
+  }
+
+  #sectionPose {
+    margin-left: 15rem;
+    margin-right: 15rem;
   }
 }

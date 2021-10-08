@@ -14,49 +14,54 @@
       integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
       crossorigin="anonymous"
     />
-    <!-- //--kopieret kode--// -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <!-- <a class="navbar-brand" href="#">LOGO</a> -->
-      
-      <img class="img-fluid mx-2 ms-3 my-2"src="img/logoLille.png" alt="logo">
-    
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarNav"
-        aria-controls="navbarNav"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link" href="#"
-              >SØSTER(HJEM) <span class="sr-only"></span
-            ></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">PRODUGTER</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">OM OS</a>
-          </li>
-          <!--   <li class="nav-item">
-            <a class="nav-link disabled" href="#">Disabled</a>
-          </li> -->
-        </ul>
-      </div>
-    </nav>
+   
 
     <title>Mikrosite</title>
   </head>
   <body>
-    <main class="container">
-      <header></header>
+    
+      <header>
+         <!-- //--kopieret kode--// -->
+         <nav
+         class="navbar navbar-expand-sm justify-content-center"
+         style="
+           border-top: 1px;
+           border-bottom: 1px;
+           border-style: solid;
+           border-left: 0px;
+           border-right: 0px;
+         "
+       >
+         <ul class="navbar-nav">
+           <li class="nav-item">
+             <a
+               class="nav-link"
+               style="font-family: poppins; font-weight: 300"
+               href="#"
+               >VORES PRODUKTER</a
+             >
+           </li>
+           <li class="nav-item">
+             <a
+               class="nav-link"
+               style="font-family: poppins; font-weight: 300"
+               href="#"
+               >OM OS</a
+             >
+           </li>
+           <li class="nav-item">
+             <a
+               class="nav-link"
+               style="font-family: poppins; font-weight: 300"
+               href="#"
+               >SÅDAN FUNGERER DET</a
+             >
+           </li>
+         </ul>
+       </nav>
+      </header>
 
+      <main class="container">
       <section id="splash">
         <div class="col-12 d-grid">
           <img
@@ -68,10 +73,10 @@
         </div>
       </section>
 
-      <section id="section1">
-        <div class="h2 text-center"><h2>SØSTERHOOD</h2></div>
-        <div class="text text-center mb-5">
-          <h3>
+      <section id="section1" class="row">
+        <div class="col-6 offset-3 d-block mx-auto text-center h2 mx-2 mb-3"><h2>SØSTERHOOD</h2></div>
+        <div class="text mx-2 mb-5">
+          <h3 class="col-6 offset-3 d-block mx-auto">
             Brødtekst Lorem ipsum dolor sit amet consectetur adipisicing elit.
             Nobis necessitatibus facilis suscipit quaerat error sint natus,
             repellendus dolorem eius asperiores quam consequatur temporibus
@@ -107,71 +112,91 @@
         </div>
       </section>
 
-      <section id="section4" class="row text-center">
+      <section id="section4" class="row ">
         <div class="top h2 text mt-5">
-          <h2 class="h2 bæredygtighed">Bæredygtig/infografik</h2>
-          <h3 class="text">
-            Brødtekst Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Nobis necessitatibus facilis suscipit quaerat error sint natus,
-            repellendus dolorem eius asperiores quam consequatur temporibus
-            voluptatem, commodi in autem deleniti numquam consequuntur?
+          <h2 class="col-6 offset-3 d-block mx-auto text-center h2 bæredygtighed mx-2 mb-3">Bæredygtig</h2>
+          <h3 class="col-6 offset-3 d-block mx-auto text mx-2">
+            Alle vores produgter er BÆREDYGTIg og ØKOLOGISK, og har en dejlig KOMFORT. Ved at abonnere på vores MenstruationsKit, vil vi hjælpe dig med at være forberedt på din menstruation hver måned. <br> Godt for KROPPEN, godt for MILJØET!
           </h3>
-          <img class="img-fluid mt-5" src="img/Artboard 1.png" alt="infografik" />
+          <img class="info1 img-fluid mt-5" src="img/1.png" alt="bæredygtig" />
+          <img class="info2 img-fluid mt-5" src="img/2.png" alt="øko" />
+          <img class="info3 img-fluid mt-5" src="img/3.png" alt="komfort" />
+          <img class="info4 img-fluid mt-5" src="img/4.png" alt="abonnement" />
         </div>
-        <div class="left h2 text mt-5 mb-5">
-          <h2 class="h2 pose">MensPose</h2>
-          <h3 class="tekst">
+      </section>
+      <section id="sectionPose" class="row">
+        <div class="col-md-6 col-lg-6 d-flex flex-column left h2 text mt-5 mb-5">
+          <h2 class="h2 pose mx-2 mb-3">MensPose</h2>           
+          <h3 class="tekst mx-2">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
             officia, ab nesciunt, architecto asperiores exercitationem deserunt
             reiciendis dolore nam dolores excepturi, voluptate ad iure.
             Provident, deleniti quisquam. Nisi, architecto perspiciatis!
           </h3>
         </div>
-        <div class="right mb-5">
-          <img class="img-fluid" src="img/MensPose.jpg" alt="menspose" />
+        <div class="right col-md-6 col-lg-6 d-flex flex-column mb-5">
+          <img class=" img-fluid img-fluid" src="img/MensPose.jpg" alt="menspose" />
         </div>
       </section>
-      <section id="section5" class="billedgalleri h2">
-        <h2 class="h2 text-center mt-5 mb-5">Billedgalleri</h2>
+      <section id="section5" class="row billedgalleri h2">
+        <div class="bilde">
+        <h2 class="col-6 offset-3 d-block mx-auto text-center h2 mx-2 mt-5 mb-5">Billedgalleri</h2>
+      </div>
+        <div class="col-md-6 col-lg-4 d-grid">
         <img
           class="img-fluid mb-3"
           src="img/oana-cristina-6QTDE-5uQMI-unsplash.jpg"
           alt=""
         />
+      </div>
+        <div class="col-md-6 col-lg-4 d-grid">
         <img
           class="img-fluid mb-3"
           src="img/oana-cristina-6QTDE-5uQMI-unsplash.jpg"
           alt=""
         />
+      </div>
+        <div class="col-md-6 col-lg-4 d-grid">
         <img
           class="img-fluid mb-3"
           src="img/oana-cristina-6QTDE-5uQMI-unsplash.jpg"
           alt=""
         />
+      </div>
+        <div class="col-md-6 col-lg-4 d-grid">
         <img
           class="img-fluid mb-3"
           src="img/oana-cristina-6QTDE-5uQMI-unsplash.jpg"
           alt=""
         />
+      </div>
+        <div class="col-md-6 col-lg-4 d-grid">
         <img
           class="img-fluid mb-3"
           src="img/oana-cristina-6QTDE-5uQMI-unsplash.jpg"
           alt=""
         />
+      </div>
+        <div class="col-md-6 col-lg-4 d-grid">
         <img
           class="img-fluid mb-3"
           src="img/oana-cristina-6QTDE-5uQMI-unsplash.jpg"
           alt=""
         />
+      </div>
       </section>
-      <section id="section6" class="omOs h2 text">
-        <h2 class="h2 text-center mt-5">Om Os</h2>
-        <h3 class="brødtekst text-center">
+      <section id="section6" class=" row omOs h2 text">
+        <div class="col-6 offset-3 d-block mx-auto text-center"><h2 class=" h2 mx-2 mt-5">Om Os</h2></div>      
+        
+          <div class="text">
+        <h3 class="col-6 offset-3 d-block mx-auto brødtekst mx-2">
           Brødtekst Lorem ipsum dolor sit amet consectetur adipisicing elit.
           Soluta iusto ea alias rerum ipsa, blanditiis quod id earum natus,
           voluptatibus, delectus illo. Velit officia, odit quasi neque saepe
           repellendus optio?
         </h3>
+      
+      </div>
         <img class="img-fluid mt-5 mb-5" src="img/hands.png" alt="omos" />
       </section>
     </main>
@@ -180,12 +205,12 @@
     <!-- Footer -->
     <footer class="page-footer font-small mdb-color pt-4 mt-5">
       <!-- Footer Links -->
-      <div class="container text-center text-md-left">
+      <div class="container text-md-left">
         <!-- Footer links -->
-        <div class="row text-center text-md-left mt-3 pb-3">
+        <div class="row ms-2 text-md-left mt-3 pb-3">
           <!-- Grid column -->
-          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-            <h6 class="text-uppercase mb-4 font-weight-bold">SØSTER</h6>
+          <div class="col-md-4 col-lg-3- col-xl-3 mx-auto mt-3">
+            <h6 class="col-6 offset-3 d-block mx-auto text-center text-uppercase mb-4 font-weight-bold">SØSTER</h6>
             <p>
               Here you can use rows and columns to organize your footer content.
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -222,14 +247,14 @@
           <hr class="w-100 clearfix d-md-none" />
 
           <!-- Grid column -->
-          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
-            <h6 class="text-uppercase mb-4 font-weight-bold">Kontakt os</h6>
+          <div class="kontakt mx-auto mt-3">
+            <h6 class="col-6 offset-3 d-block mx-auto text-center text-uppercase mb-4 font-weight-bold">Kontakt os</h6>
             <p>
-              <i class="fas fa-home mr-3"></i> Søstervej 66, 2200 København N.
+              <i class="col-6 offset-3 d-block mx-auto fas fa-home mr-3"></i> Søstervej 66, 2200 København N.
               DK
             </p>
-            <p><i class="fas fa-envelope mr-3"></i> soester@gmail.com</p>
-            <p><i class="fas fa-phone mr-3"></i> +45 234 567 88</p>
+            <p><i class="col-6 offset-3 d-block mx-auto fas fa-envelope mr-3"></i> soester@gmail.com</p>
+            <p><i class="col-6 offset-3 d-block mx-auto fas fa-phone mr-3"></i> +45 234 567 88</p>
           </div>
           <!-- Grid column -->
         </div>
@@ -240,9 +265,9 @@
         <!-- Grid row -->
         <div class="row d-flex align-items-center">
           <!-- Grid column -->
-          <div class="cr col-md-7 col-lg-8">
+          <div class="cr">
             <!--Copyright-->
-            <p class="text-center">
+            <p class="col-6 offset-3 d-block mx-auto text-center">
               © 2020 Copyright:
               <!-- <a href="https://mdbootstrap.com/"> -->
               <strong>Monica Amundsen</strong>
@@ -262,6 +287,7 @@
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
       crossorigin="anonymous"
+     src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js" 
     ></script>
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->

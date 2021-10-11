@@ -14,9 +14,8 @@ use the fonts in other ways in the font hierarchy etc. */
 
 /* change / delete some of these - note: all variables are listed twice */
 
-/* :root */
-html {
-  --bg-color: #be0f0f;
+:root {
+  --bs-body-bg: #be0f0f;
   --link-color: rgb(128, 0, 6);
   --link-hover-color: #f7d138;
   --color-2: #f7d138;
@@ -34,27 +33,33 @@ html {
   --white-space: 2rem;
 }
 
-/* html {
-  font-size: 100%;
-  font-family: var(--primary-font);
-} */
-body {
-  background-color: var(--bg-color);
+/* font-family: 'Anton', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Spartan', sans-serif; */
+
+.nav-item {
+  font-family: "Spartan", sans-serif;
+  color: var(--color-2);
 }
 
-nav img {
-  width: 10%;
+.navbar-expand-sm .navbar-nav .nav-link:hover {
+  color: var(--color-3);
 }
-nav button {
-  margin-right: 1.5rem;
+
+.navbar-expand-sm .navbar-nav .nav-link {
+  color: pink;
 }
+
+/* .splashbilde {
+  opacity: 0.5;
+} */
 .h2 h2 {
-  font-family: "spartan";
+  font-family: "Spartan", sans-serif;
   font-size: calc(1.5rem + 0.9vw);
   font-weight: normal;
 }
 .text h3 {
-  font-family: "corbel";
+  font-family: "Montserrat", sans-serif;
   font-weight: normal;
   font-size: 1rem;
 }
@@ -77,6 +82,10 @@ nav button {
   margin-bottom: var(--white-space);
 }
 
+.text {
+  line-height: 1.5;
+}
+
 .splashh1 {
   color: var(--color-2);
   font-family: var(--font-h1);
@@ -86,9 +95,20 @@ footer h6 {
   font-family: "spartan";
 }
 footer p {
-  font-family: "corbel";
+  font-family: "Montserrat", sans-serif;
   font-weight: normal;
   font-size: 1rem;
+}
+
+.bi-instagram:hover {
+  color: var(--color-2);
+}
+.bi-facebook:hover {
+  color: var(--color-4);
+}
+.bi-facebook,
+.bi-instagram {
+  color: var(--color-3);
 }
 
 /* //--Ipad---// */

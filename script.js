@@ -12,7 +12,7 @@ sections.forEach((section) => {
         start: "top 50%",
         end: "+=200",
         scrub: true,
-        markers: true,
+        /* markers: true, */
       },
     })
     .from(h2, {
@@ -25,4 +25,28 @@ sections.forEach((section) => {
       opacity: 0,
       stagger: 1,
     });
+});
+
+/* gsap.to(".info1", {
+  duration: 2,
+  x: 200,
+  ease: "back",
+}); */
+
+gsap.set(".info1, .info2", {
+  transformOrigion: "50% 50%",
+});
+
+gsap.to(".info1, .info2", {
+  duration: 2,
+  rotation: 360,
+});
+
+gsap.set(".info3, .info4", {
+  transformOrigion: "50% 50%",
+});
+
+gsap.to(".info3, .info4", {
+  duration: 2,
+  rotation: 360,
 });

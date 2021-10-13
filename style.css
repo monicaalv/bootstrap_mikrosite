@@ -15,7 +15,7 @@ use the fonts in other ways in the font hierarchy etc. */
 /* change / delete some of these - note: all variables are listed twice */
 
 :root {
-  --bs-body-bg: #be0f0f;
+  --bs-body-bg: rgb(244, 212, 42);
   --link-color: rgb(128, 0, 6);
   --link-hover-color: #f7d138;
   --color-2: #f7d138;
@@ -37,22 +37,25 @@ use the fonts in other ways in the font hierarchy etc. */
 font-family: 'Montserrat', sans-serif;
 font-family: 'Spartan', sans-serif; */
 
-.nav-item {
-  font-family: "Spartan", sans-serif;
-  color: var(--color-2);
-}
-
-.navbar-expand-sm .navbar-nav .nav-link:hover {
-  color: var(--color-3);
-}
-
-.navbar-expand-sm .navbar-nav .nav-link {
-  color: pink;
-}
-
 /* .splashbilde {
   opacity: 0.5;
 } */
+.container {
+  background-color: var(--color-2);
+}
+.uten {
+  background-color: #da707000;
+}
+
+.nav-link {
+  color: var(--color-4);
+  font-size: 0.87rem;
+}
+
+.nav-link:hover {
+  color: var(--color-3);
+}
+
 .h2 h2 {
   font-family: "Spartan", sans-serif;
   font-size: calc(1.5rem + 0.9vw);
@@ -86,10 +89,15 @@ font-family: 'Spartan', sans-serif; */
   line-height: 1.5;
 }
 
+.btn-dark:hover {
+  color: var(--color-4);
+}
+
 .splashh1 {
-  color: var(--color-2);
+  color: rgb(218, 10, 10);
   font-family: var(--font-h1);
   font-size: 5rem;
+  /*  text-shadow: 2px 2px #802b2b; */
 }
 footer h6 {
   font-family: "spartan";
@@ -111,6 +119,55 @@ footer p {
   color: var(--color-3);
 }
 
+.info1,
+.info2,
+.info3,
+.info4 {
+  width: 50%;
+}
+
+/* animation */
+#bannerAnimation {
+  border-top: solid #40000d 2px;
+  border-bottom: solid #40000d 2px;
+  margin-bottom: 22px;
+  margin-top: 40px;
+  background: #40000d;
+}
+.marquee {
+  height: 25px;
+  width: fit-content;
+
+  overflow: hidden;
+  position: relative;
+}
+
+.marquee span {
+  background: #40000d;
+}
+
+.marquee div {
+  width: 500%;
+  height: 100px;
+  position: absolute;
+  overflow: hidden;
+  animation: marquee 100s linear infinite;
+}
+
+.marquee span {
+  float: left;
+  width: 50%;
+  color: #f1e6ee;
+}
+
+@keyframes marquee {
+  100% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+
 /* //--Ipad---// */
 @media (min-width: 700px) {
   #splash div * {
@@ -127,6 +184,13 @@ footer p {
 
   .ipad .img-fluid {
     margin-top: 1.5rem;
+  }
+
+  .nav-link {
+    font-size: 1.3rem;
+  }
+  .info1 {
+    width: 80%;
   }
 }
 

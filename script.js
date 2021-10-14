@@ -1,6 +1,8 @@
 gsap.registerPlugin(ScrollTrigger);
 
-const sections = document.querySelectorAll("#section1, #section4, #section6");
+const sections = document.querySelectorAll(
+  "#section1, #section4, #section6, #sectionPose"
+);
 
 sections.forEach((section) => {
   const h2 = section.querySelector("h2");
@@ -27,13 +29,14 @@ sections.forEach((section) => {
     });
 });
 
+/* --infografik-- */
 /* gsap.to(".info1", {
   duration: 2,
   x: 200,
   ease: "back",
 }); */
 
-gsap.set(".info1, .info2", {
+/* gsap.set(".info1, .info2", {
   transformOrigion: "50% 50%",
 });
 
@@ -49,4 +52,4 @@ gsap.set(".info3, .info4", {
 gsap.to(".info3, .info4", {
   duration: 2,
   rotation: 360,
-});
+}); */

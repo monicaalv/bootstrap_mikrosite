@@ -37,23 +37,60 @@ use the fonts in other ways in the font hierarchy etc. */
 font-family: 'Montserrat', sans-serif;
 font-family: 'Spartan', sans-serif; */
 
-/* .splashbilde {
-  opacity: 0.5;
-} */
+/* --parallax-- */
+#splash {
+  height: 450px;
+}
+.parallax {
+  padding: 150px 0;
+  background-image: url(img/splash2.jpg);
+  width: 100%;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  transition: 0.2s;
+}
+
 .container {
-  background-color: var(--color-2);
+  background-color: var(--bs-body-bg);
+  margin-top: 4rem;
+}
+.containerinfo {
+  margin-top: 1rem;
+}
+.containergalleri {
+  margin-top: 1rem;
+}
+#section4 {
+  margin-top: 5rem;
+}
+#sectionPose {
+  margin-top: 5rem;
+}
+#section6 {
+  margin-top: 5rem;
+}
+.page-footer .container {
+  margin-top: 1rem;
 }
 .uten {
   background-color: #da707000;
 }
 
 .nav-link {
-  color: var(--color-4);
+  color: #cb0d78;
   font-size: 0.87rem;
+  font-family: var(--font-h1);
+  letter-spacing: 3px;
 }
 
 .nav-link:hover {
   color: var(--color-3);
+}
+
+.nav {
+  margin-left: 1.2rem;
 }
 
 .h2 h2 {
@@ -66,6 +103,7 @@ font-family: 'Spartan', sans-serif; */
   font-weight: normal;
   font-size: 1rem;
 }
+
 #splash {
   margin-bottom: var(--white-space);
 }
@@ -88,15 +126,19 @@ font-family: 'Spartan', sans-serif; */
 .text {
   line-height: 1.5;
 }
+.btn-dark {
+  text-transform: uppercase;
+}
 
 .btn-dark:hover {
   color: var(--color-4);
 }
 
 .splashh1 {
-  color: rgb(218, 10, 10);
+  color: rgba(17, 17, 17, 0.76);
+  /* color: rgb(218, 10, 10); */
   font-family: var(--font-h1);
-  font-size: 5rem;
+  font-size: 6rem;
   /*  text-shadow: 2px 2px #802b2b; */
 }
 footer h6 {
@@ -109,14 +151,14 @@ footer p {
 }
 
 .bi-instagram:hover {
-  color: var(--color-2);
+  color: var(--color-3);
 }
 .bi-facebook:hover {
-  color: var(--color-4);
+  color: var(--color-3);
 }
 .bi-facebook,
 .bi-instagram {
-  color: var(--color-3);
+  color: #ec3fe0ed;
 }
 
 .info1,
@@ -126,24 +168,46 @@ footer p {
   width: 50%;
 }
 
-/* animation */
-#bannerAnimation {
-  border-top: solid #40000d 2px;
-  border-bottom: solid #40000d 2px;
-  margin-bottom: 22px;
-  margin-top: 40px;
-  background: #40000d;
+.info3,
+.info4 {
+  margin-top: 2rem;
 }
-.marquee {
-  height: 25px;
-  width: fit-content;
 
+.ombilde {
+  width: 100%;
+}
+.img_text {
+  padding: 2rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+hr:not([size]) {
+  height: 2px;
+  color: #ff03fb;
+}
+
+/* .nav-item {
+  font-family: var(--font-h1);
+}
+.nav-item:hover {
+  color: var(--color-2);
+} */
+
+/* lånt animation */
+
+.marquee {
+  height: 35px;
+  width: fit-content;
   overflow: hidden;
   position: relative;
 }
 
 .marquee span {
-  background: #40000d;
+  float: left;
+  width: 50%;
+  color: #e05605;
+  text-transform: uppercase;
+  font-size: 1.5rem;
 }
 
 .marquee div {
@@ -151,13 +215,7 @@ footer p {
   height: 100px;
   position: absolute;
   overflow: hidden;
-  animation: marquee 100s linear infinite;
-}
-
-.marquee span {
-  float: left;
-  width: 50%;
-  color: #f1e6ee;
+  animation: marquee 60s linear infinite;
 }
 
 @keyframes marquee {
@@ -167,11 +225,23 @@ footer p {
   100% {
     transform: translateX(-100%);
   }
+}
 
 /* //--Ipad---// */
 @media (min-width: 700px) {
+  #splash {
+    height: 570px;
+  }
   #splash div * {
     font-size: 10rem;
+  }
+
+  .mb-5 {
+    margin-bottom: 5rem !important;
+  }
+
+  .nav {
+    margin-left: 2.5rem;
   }
 
   footer .col-md-4 {
@@ -189,15 +259,74 @@ footer p {
   .nav-link {
     font-size: 1.3rem;
   }
-  .info1 {
-    width: 80%;
+
+  .info1,
+  .info2,
+  .info3,
+  .info4 {
+    width: 50%;
+  }
+
+  .info3,
+  .info4 {
+    margin-top: 0;
+  }
+
+  #section4,
+  #section6 {
+    margin-top: 6rem;
+  }
+
+  #sectionPose {
+    margin-top: 8rem;
+  }
+  .hei {
+    position: relative;
+  }
+  .hei:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0);
+  }
+  .hei:hover::before {
+    background-color: rgba(187, 100, 100, 0.5);
+  }
+  .hei img {
+    display: block;
+  }
+  .hei button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    opacity: 0;
+  }
+  .hei:hover button {
+    opacity: 1;
+  }
+  .ombilde {
+    width: 60%;
   }
 }
 
 /* //--desctop--// */
 @media (min-width: 992px) {
+  #splash {
+    height: 680px;
+  }
+
   #splash div * {
     font-size: 15rem;
+  }
+
+  .nav {
+    margin-left: 4rem;
   }
 
   .ipad .img-fluid {
@@ -207,5 +336,32 @@ footer p {
   #sectionPose {
     margin-left: 15rem;
     margin-right: 15rem;
+  }
+
+  /* infografik */
+  .img_wrap {
+    position: relative;
+    height: 200px;
+    width: 257px;
+  }
+
+  .img_text {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(235, 83, 37, 0.959);
+    color: rgb(14, 13, 13);
+    visibility: hidden;
+    opacity: 0;
+    padding: 1.5rem;
+    font-family: "Montserrat", sans-serif;
+    /* transition effect. not necessary */
+    transition: opacity 0.2s, visibility 0.2s;
+  }
+  .img_wrap:hover .img_text {
+    visibility: visible;
+    opacity: 1;
   }
 }

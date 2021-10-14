@@ -28,10 +28,15 @@
  <!--  class="splashbilde" style="background-image: url('img/splashUtenTekst.jpg');" -->
   <body>
     
-      <header class="container uten"> <!-- position-absolute -->
+      <header class="container uten  position-absolute"> <!-- position-absolute -->
          <!-- //--kopieret nav kode--// -->
-
-       <ul class="nav mt-3 mb-2"> <!-- fixed-top -->
+       <ul class="nav mt-2 mb-2 fixed-top"> <!-- fixed-top -->
+     <!--    <li class="nav-item logo">
+          <a class="nav-link active" href="#section1"><img src="img/logo01.png" alt="logo"></a>
+        </li> -->
+        <li class="nav-item">
+          <a class="nav-link active" href="#splash">SØSTER</a>
+        </li>
         <li class="nav-item">
           <a class="nav-link active" href="#section2">PRODUKTER</a>
         </li>
@@ -44,15 +49,15 @@
       </ul>
       </header>
 
-      <main class="container">
+      <main class="main"><!-- container -->
       <section id="splash">
-        <div class="col-12 d-grid">
+        <div class="parallax col-12 d-grid">
           <div class="opacity">
-          <img
-            class="mt-3 mb-4 w-100 d-block mx-auto img-fluid"
-            src="img/splashUtenTekst.jpg"
+      <!--     <img
+            class="mb-4 w-100 d-block mx-auto img-fluid"
+            src="img/splash2.jpg"
             alt="splash_billede"
-          />
+          /> -->
         </div>
         <div class="test">
           <h1 class="splashh1 text-center">SØSTER</h1>
@@ -60,7 +65,7 @@
         </div>
       </section>
 <div class="container">
-      <section id="section1" class="row mt-5">
+      <section id="section1" class="row">
         <div class="col-md-6 offset-3 d-block mx-auto text-center h2 mx-2 mb-3"><h2>SØSTERHOOD</h2></div>
         <div class="text mx-2 mb-5">
           <h3 class="text col-md-6 offset-3 d-block mx-auto">
@@ -72,17 +77,17 @@ Vi vil gerne hjælpe dig godt på vej - derfor er vores produkter udvundet af ø
         </div>
       </section>
     </div>
-    <div class="container mb-5">
+    <div class="container containergalleri mb-5">
       <section id="section2" class="row mb-5">
-        <div class="col-md-6 col-lg-4 text-center d-grid mx-0">
+        <div class="hei col-md-6 col-lg-4 text-center d-grid">
           <img
-            class="img-fluid"
+            class="imgeP img-fluid"
             src="img/b5.jpg"
-            alt=""
+            alt="cup"
           />
           <button type="button" class="btn btn-dark">Se mere</button>
         </div>
-        <div class="col-md-6 col-lg-4 text-center d-grid">
+        <div class="hei col-md-6 col-lg-4 text-center d-grid">
           <img
             class="img-fluid"
             src="img/b6.jpg"
@@ -90,7 +95,7 @@ Vi vil gerne hjælpe dig godt på vej - derfor er vores produkter udvundet af ø
           />
           <button type="button" class="btn btn-dark">Se mere</button>
         </div>
-        <div class="ipad col-md-6 col-lg-4 text-center d-grid">
+        <div class="hei ipad col-md-6 col-lg-4 text-center d-grid">
           <img
             class="img-fluid"
             src="img/b7.jpg"
@@ -108,40 +113,40 @@ Vi vil gerne hjælpe dig godt på vej - derfor er vores produkter udvundet af ø
         </div> -->
       </section>
     </div>
-    <div class="container mb-5 mt-5">
-      <section id="section4" class="row mb-5 mx-5 ">
+    <div class="container mt-5">
+      <section id="section4" class="row">
         <div class="top h2 mt-5 text">
           <h2 class=" text-center h2 bæredygtighed mx-2 mb-3">Bæredygtig</h2>
         </div> 
-        <div class="text mx-2 mb-5">
+        <div class="text mx-2">
           <h3 class="text col-md-6 offset-3 d-block mx-auto mx-2">
             Alle vores produgter er BÆREDYGTIg og ØKOLOGISK, og har en dejlig KOMFORT. Ved at abonnere på vores MenstruationsKit, vil vi hjælpe dig med at være forberedt på din menstruation hver måned. <br> Godt for KROPPEN, godt for MILJØET!
           </h3>
         </div>
       </section> 
       </div>
-      <div class="container mb-5 mt-5">
-        <section id="sectionInfo" class="row">
-          <div class="col-md-3 text-center"> 
-            <img class="info1 img-fluid mt-5" src="img/5.png" alt="bæredygtig" /></div>
-         <div class="col-md-3 text-center">
-           <img class="info2 img-fluid mt-5" src="img/2.png" alt="øko" /></div>
-          <div class="col-md-3 text-center">
-            <img class="info3 img-fluid mt-5" src="img/3.png" alt="komfort" /></div>
-         <div class="col-md-3 text-center">
-           <img class="info4 img-fluid mt-5" src="img/4.png" alt="abonnement" /></div>
+      <div class="container containerinfo mb-5">
+        <section id="sectionInfo" class="row mb-5">
+          <div class="img_wrap pt-5 col-md-6 offset-3 d-block mx-auto mx-2 text-center"> 
+            <img class="info1 img-fluid" src="img/tre.svg" alt="bæredygtig" />
+            <p class="img_text">Vores produkter er lavet på genbrugs- og bionedbrydeligt materiale. Som vores planet virkeligt trænger!</p>
+          </div>
+         <div class="img_wrap pt-5 col-md-6 offset-3 d-block mx-auto mx-2 text-center">
+           <img class="info2 img-fluid" src="img/piler.svg" alt="øko" />
+           <p class="img_text">Vores produkter er lavet på økologisk bomuld, alt andet ville være pænt usejt!</p>
+          </div>
+          <div class="img_wrap pt-5 col-md-6 offset-3 d-block mx-auto mx-2 text-center">
+            <img class="info3 img-fluid" src="img/truser.svg" alt="komfort" />
+            <p class="img_text">Vores bind er formet efter dine trusser, lille stor større, vi elsker alle former og størrelser!</p>
+          </div>
+         <div class="img_wrap pt-5 col-md-6 offset-3 d-block mx-auto mx-2 text-center">
+           <img class="info4 img-fluid" src="img/kalender.svg" alt="abonnement" />
+           <p class="img_text">Med vores abonnementsystem, behøver du aldrig at løbe tør for hygieneprodugter. <br> We got you girl! </p>
+          </div>
           </section>
     </div>
 
-    <section id="bannerAnimation">
-      <div class="marquee">
-        <div>
-          <span
-            >ØKOLOGISK 
-          </span>
-        </div>
-      </div>
-    </section>
+  
 
 
     <div class="container mb-5 mt-5">
@@ -234,16 +239,25 @@ Men bare rolig vi er løsningsorienterede, derfor får du vores søster-clutch m
         
           <div class="text">
         <h3 class="text col-md-6 offset-3 d-block mx-auto brødtekst mx-2">
-          Brødtekst Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Soluta iusto ea alias rerum ipsa, blanditiis quod id earum natus,
-          voluptatibus, delectus illo. Velit officia, odit quasi neque saepe
-          repellendus optio?
+          SØSTER er en gruppe kvinder der ved hvordan det er at få menstruation for første gang, og hvordan det er at leve med det. 
+          Vi er her for at støtte og hjælpe dig med din menstruation. <br> Det er en del af dig. Elsk at akseptere det.<br> 
+           Sig FUCK JA til menstruation!
         </h3>
       
       </div>
-        <img class="img-fluid mb-5" src="img/hands.png" alt="omos" />
+        <img class="ombilde col-6 offset-3 d-block mx-auto img-fluid mb-5" src="img/hånd04.png" alt="omos" />
       </section>
     </div>
+
+      <section id="bannerAnimation">
+      <div class="marquee mt-5 mb-5">
+        <div>
+          <span
+            > -  Tante Rød  -  Mens  -  Bloody Mary  -  Girl Flue  -  Besøg fra Rødby  -  Rødhette på besøg  -
+          </span>
+        </div>
+      </div>
+    </section>
     </main>
 
     <!--  //--kopieret kode--// -->
@@ -340,6 +354,9 @@ Men bare rolig vi er løsningsorienterede, derfor får du vores søster-clutch m
     <!--  gstrap -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
+<!-- lånt kode -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 
 <script src="script.js"></script>
 

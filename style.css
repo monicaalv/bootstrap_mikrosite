@@ -7,7 +7,10 @@
 * {
   box-sizing: border-box;
 }
-
+img {
+  width: 100%;
+  height: auto;
+}
 /* THIS IS ALL meant for editing. You might want to do it differently,
 name the variables differently,
 use the fonts in other ways in the font hierarchy etc. */
